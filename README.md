@@ -1,2 +1,1 @@
-# BBS-slides-2021-july
- Slides Brown Bag Seminar TU Dresden July 2021
+# ERSA-2021-summer-school-slides
