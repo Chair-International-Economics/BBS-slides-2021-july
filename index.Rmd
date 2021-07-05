@@ -2,7 +2,7 @@
 title: "The Effect of Conditional Cash Transfer Policies on Regional Crime Levels:"
 subtitle: "Evidence from a Synthetic Controls Framework"
 author: "Felipe Santos-Marquez<br />https://felipe-santos.rbind.io<br /><br />Research Assistant / PhD Student <br />Chair of International Economics<br />Technische Universität Dresden<br /> Germany"
-date: "Prepared for the Brown Bag Seminar July 7th 2021  <br /><br /> [slides available at:  https://ersa-felipe-santos.netlify.app]"
+date: "Prepared for the Brown Bag Seminar July 7th 2021  <br /><br /> [slides available at: https://bbs-felipe.netlify.app]"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -137,7 +137,7 @@ class: middle
 
 <br />
 <br />
-[ Slides and paper available at: https://quarcs-lab.org ]
+[ Slides available at: https://bbs-felipe.netlify.app/ ]
 
 ---
 class: middle, highlight-last-item
@@ -345,7 +345,9 @@ class: center, middle
 # Thank you very much for your attention
 personal website: https://felipe-santos.rbind.io
 
-slides available at:  https://ersa-felipe-santos.netlify.app
+slides available at:  https://bbs-felipe.netlify.app/
+
+Working paper available on request  felipe.santos@tu-dresden.de :) :) :) 
 
 .pull-left[
 ![](figs/QuaRCS-lab-logo2.png)
