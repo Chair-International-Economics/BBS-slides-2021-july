@@ -145,11 +145,13 @@ class: middle
 
 ---
 class: middle, highlight-last-item
-# 1. The paper in one chart
+# 1. The paper(s) in one chart
+
+## A "data science" framework for regional policy evaluations
 <img src="figs/flowchart.jpg" style="width:100%"/>
 
 --
-$$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synethetic \space Controls \rightarrow The \space impact \space of \space  X \space on \space Y  $$
+$$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synethetic \space Controls \rightarrow The \space impact \space of \space  Z \space on \space Y  $$
 
 ---
 class: middle, highlight-last-item
@@ -261,12 +263,13 @@ class: center, highlight-last-item
 # 5. Synthetic control methods
 
 ## visual intuition (In terms of GDP per capita)
+2011 Fukushima Daiichi nuclear disaster 
 
 
 <img src="figs/synthetic_methods.png" style="width: 55%"/>
 --
 
-$$TOKYO=0.4*OSAKA + 0.2*AICHI+0.1∗FUKUOKA+...$$
+$$FUKUSHIMA=0.4*OSAKA + 0.2*AICHI+0.1∗FUKUOKA+...$$
 --
 
 ### In terms of crime
@@ -343,7 +346,7 @@ class: highlight-last-item
 
 - The framework of this paper can be considered a **data science framework to test the impact of regional policies**
 
-$$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synethetic \space Controls \rightarrow The \space impact \space of \space  X \space on \space Y  $$
+$$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synethetic \space Controls \rightarrow The \space impact \space of \space  Z \space on \space Y  $$
 
 
 
@@ -351,10 +354,6 @@ $$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synetheti
 class: middle, highlight-last-item
 
 ### 6.  Further research
-
-- The robustness of the result can be tested by changing the thresholds for low and high CCT coverage.  Instead of 30%  and 70%, one can use thresholds such as **20%-80% and 25%-75%**.
---
-
 
 - A dataset of determinants of crime based on previous literature (instead of the determinants found with the BMA) can be assembled.  **This new dataset can be used as the input for the synthetic control analysis.**
 --
@@ -382,7 +381,7 @@ https://github.com/jfsantosm/2021a-crime-ccts-colombia
 
 ## Do you like R and R studio?
 
-You can literally replicate these slides here 
+You can "literally" replicate these slides 
 
 https://github.com/Chair-International-Economics/BBS-slides-2021-july 
 
@@ -418,5 +417,25 @@ https://tu-dresden.de/bu/wirtschaft/vwl/iwb
 ]
 
 
+---
+
+## Some references (full list in the working paper)
+
+- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller (2010). "Synthetic control methods for comparative case studies: Estimating the effect of California's tobacco control program". In: Journal of the American statistical Association 105.490, pp. 493-505.
+
+- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller (2011). "Synth: An r package for synthetic control methods in comparative case studies". In: Journal of Statistical Software 42.13.
+
+- Abadie, Alberto, Alexis Diamond, and Jens Hainmueller (2015). "Comparative politics and the synthetic control method". In: American Journal of Political Science 59.2, pp. 495-510.
+
+- Abadie, Alberto and Javier Gardeazabal (2003). "The economic costs of conflict: A case study of the Basque Country". In: American economic review 93.1, pp. 113-132.
+
+- Fernández, C., Ley, E., and Steel, M. F. (2001). Model uncertainty in cross-country growth regressions. Journal of Applied Econometrics, 16(5):563–576.
+
+- Sala-I-Martin, Xavier X. (1997). I Just Ran Two Million Regressions. The American Economic Review, 87(2), 178-183. Retrieved July 7, 2021, from http://www.jstor.org/stable/2950909
 
 
+---
+
+- Sergio J. Rey, Daniel Arribas-Bel, and Levi J. Wolf. Geographic Data Science with PySAL and the PyData stack. CRC press, forthcoming.
+
+- Urrutia, M., & Robles Báez, C. (2018). Las transferencias condicionadas en Colombia: una historia del programa Familias en Acción (2001-2018).
