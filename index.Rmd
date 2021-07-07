@@ -122,17 +122,21 @@ class: middle
 
 2. Regional disparities and crime in Colombia
 
-3. BMA Bayesian Model aveaging
+3. What are CCTs?
+
+4. BMA Bayesian Model aveaging
 
   - Methodology
   - Results
 
-4. Synthetic Controls Methods
+5. Synthetic Controls Methods
 
   - Methodology
   - Results
   
-5. Conclusions
+6. Conclusions
+
+7. Open Science 
   
 
 <br />
@@ -141,7 +145,7 @@ class: middle
 
 ---
 class: middle, highlight-last-item
-# The paper in one chart
+# 1. The paper in one chart
 <img src="figs/flowchart.jpg" style="width:100%"/>
 
 --
@@ -149,7 +153,7 @@ $$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synetheti
 
 ---
 class: middle, highlight-last-item
-## Homicide rates over time
+##  2. Homicide rates over time
 <img src="figs/homicides.png" style="width:100%"/>
 
 Intentional homicides for selected South American countries and Japan (Source:
@@ -169,7 +173,7 @@ Author’s calculations using data from the WDI World Bank (2020))
 
 
 ---
-# Large regional disparities in Colombia
+# 2. Large regional disparities in Colombia
 
 .pull-left[
 
@@ -183,12 +187,27 @@ Author’s calculations using data from the WDI World Bank (2020))
 ![](figs/01_eb_mr_2018.png)
 **(In Germany = about 0.1 per 10.000 people)**
 ]
+--
+
+---
+class: 
+
+# 3. Conditional Cash Transfers
+
+- In general terms, the CCTs programs consisted on monetary transfers in order to encourage the poorest Colombian families to have children and teenagers attend schools, making sure their diet and heath wouldn't worsen during the economic recession. (**Urrutia and Robles 2018**)
+
+- It has become a permanent public policy, several studies have been focused on the implications of this policy. (**Urrutia and Robles 2018**)
+
+ <img src="figs/cct.png" style="width:80%"/>
+
 
 ---
 class: middle, center
 
-## In the economics literature (to start with)
+## 4. BMS ----- In the economics literature (to start with)
 ## I Just Ran Two Million Regressions (Sala-I-Martin 1997)
+
+--
 
 .pull-left[ <img src="figs/sala.png" style="width:90%"/>
 
@@ -205,7 +224,7 @@ class: middle, center
 
 class: 
 
-### Bayesian Model Averaging BMA - methods and results:
+### 4. Bayesian Model Averaging BMA - methods and results:
 
 $$y=\alpha_{i}+X_{i} \beta_{i}+\varepsilon, \quad \varepsilon \sim N\left(0, \sigma^{2} I\right)$$ 
 --
@@ -230,7 +249,7 @@ $$y=\alpha_{i}+X_{i} \beta_{i}+\varepsilon, \quad \varepsilon \sim N\left(0, \si
 
 class: center
 
-## **212 variables** between original and spatially lagged variables were tested as determinants of 2018 homicide rates. 
+## 4. **212 variables** between original and spatially lagged variables were tested as determinants of 2018 homicide rates. 
 
 ##**After running 2 million regressions...**
 <img src="figs/determinants_crime2.PNG" style="width: 100%"/>
@@ -239,7 +258,7 @@ class: center
 class: center, highlight-last-item
 
 
-# Synthetic control methods
+# 5. Synthetic control methods
 
 ## visual intuition (In terms of GDP per capita)
 
@@ -257,7 +276,7 @@ The weights are found so that the synthetic municipality has a similar crime tre
 ---
 
 class: center
-##  Results: Synthetic control methods
+##  5. Results: Synthetic control methods
 
 .pull-left[ **$$high-CCT-coverage > 70\%$$**
 ]
@@ -272,7 +291,7 @@ class: center
 
 ---
 class:  center
-# The effect of CCTs on crime
+# 5. The effect of CCTs on crime
 --
 
 .pull-left[
@@ -287,18 +306,25 @@ class:  center
 ![](figs/gaps2.png)
 
 ]
+
+
+--
+
+$$\mathrm{RMSPE}=\left(\frac{1}{T_{0}} \sum_{t=1}^{T_{0}}\left(Y_{1 t}-\sum_{j=2}^{J+1} w_{j}^{*} Y_{j t}\right)^{2}\right)^{1 / 2}$$ 
 --
 
 ## A t-test shows that the mean effect (lower crime) is statistically lower for the treatment group.
 
---
-The results of the synthetic controls methods are fully reproducible. 
-https://github.com/quarcs-lab/Tutorial-synthetic-control-methods-Felipe-thesis-chapter5  
-
 ---
 class: highlight-last-item
 
-### Concluding Remarks
+# 5. Robustness Checks
+
+<img src="figs/robust.png" style="width:95%"/>
+---
+class: highlight-last-item
+
+### 6. Concluding Remarks
 
 - Supporting previous studies, variables related to **inequality, literacy rates, previous crime levels, institutional capabilities, conflict and drug-trafficking**  were reported as significant determinants of homicide rates.
 --
@@ -324,7 +350,7 @@ $$BMA \rightarrow  \space determinants \space  of\space Y \rightarrow  Synetheti
 ---
 class: middle, highlight-last-item
 
-### Further research
+### 6.  Further research
 
 - The robustness of the result can be tested by changing the thresholds for low and high CCT coverage.  Instead of 30%  and 70%, one can use thresholds such as **20%-80% and 25%-75%**.
 --
@@ -338,6 +364,29 @@ Spatial filtering?
 Adding a distance indicator as one of the determinants in the Synthetic Controls framework?
 
 ---
+class: middle, center, highlight-last-item
+
+# 7. Open Science
+
+***"The current state of Science in terms of transparency and openness is prompting for action... the term “reproducibility” is also gaining traction. ... its definition alludes to the need of scientific results to be accompanied by enough information and detail so they could be repeated by a third party" (Rey et al. 2021)***
+
+# How can you replicate these results?
+
+**Synthetic Controls**
+
+https://github.com/jfsantosm/2021a-crime-ccts-colombia
+
+*Click on [launch binder]*
+
+**BMS [forthcoming]**
+
+## Do you like R and R studio?
+
+You can literally replicate these slides here 
+
+https://github.com/Chair-International-Economics/BBS-slides-2021-july 
+
+---
 
 
 class: center, middle
@@ -347,7 +396,7 @@ personal website: https://felipe-santos.rbind.io
 
 slides available at:  https://bbs-felipe.netlify.app/
 
-Working paper available on request  felipe.santos@tu-dresden.de :) :) :) 
+ **:-)** Working paper available on request  felipe.santos@tu-dresden.de **:-)**   
 
 .pull-left[
 ![](figs/QuaRCS-lab-logo2.png)
