@@ -401,7 +401,7 @@ slides available at:  https://bbs-felipe.netlify.app/
 ![](figs/QuaRCS-lab-logo2.png)
 
 **Quantitative Regional and Computational Science lab**
-
+hello
 https://quarcs-lab.org
 
 ]
